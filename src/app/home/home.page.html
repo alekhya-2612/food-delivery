@@ -1,5 +1,53 @@
-
-<ion-content class="background-image">
-<img src ="assets/food.jpeg" style="height: 250;width: 450px;">
+<ion-content>
+<div class="background-image">
+  <ion-icon name="arrow-back-circle-outline" style="height:50px;width:55px;color:white;"></ion-icon>
+  <ion-icon name="heart-circle-outline" style="height:50px;width:55px;margin-left:230px;color:white;"></ion-icon>
+  <ion-icon name="search-circle-outline" style="height:50px;width:55px;color:white;"slot="end"></ion-icon>
+  </div>
 </ion-content>
+<ion-card>
+  <ion-item>
+  <h1 >Menu</h1>
+    <ion-icon name="close-outline" slot="end"></ion-icon>
+  </ion-item>
+<ion-item>
+ <h3>| Recommended</h3>
+ <h3 slot="end">14</h3>
+</ion-item>
+<ion-item>
+  <h4>Ramadan Iftar Special</h4>
+  <p slot="end">10</p>
+</ion-item>
+<ion-item>
+  <h4>Combo meals</h4>
+  <p slot="end">9</p>
+</ion-item>
+<ion-item>
+  <h4>Non veg Starters</h4>
+  <p slot="end">12</p>
+</ion-item>
+<ion-item>
+  <h4>Bryani Family pack</h4>
+  <p slot="end">8</p>
+</ion-item>
+  <ion-item>
+  <h4>Brood's</h4>
+  <p slot="end">7</p>
+</ion-item>
+<ion-item>
+  <h4>Rice</h4>
+  <p slot="end">6</p>
+</ion-item>
+<ion-item>
+  <h4>Orinks</h4>
+  <p slot="end">12</p>
+</ion-item>
+<ion-item>
+  <h4>Desserta</h4> 
+  <p slot="end">8</p>
+</ion-item>
+</ion-card>
 
+<ion-button id="open-action-sheet">Menu</ion-button>
+<ion-action-sheet trigger="open-action-sheet" header="Actions" buttons="actionSheetButtons">
+  </ion-action-sheet>
