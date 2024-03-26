@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesPage implements OnInit {
 
-  constructor() { }
+  public segment: string = "list";
+  public arr = new Array(40);
+  
+
+  constructor() {}
+
+  segmentChanged(ev: any) {
+    this.segment = ev.detail.value;
+  }
 
   ngOnInit() {
   }
