@@ -33,7 +33,11 @@ const routes: Routes = [
   {
     path: 'cart',
     loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },  {
+    path: 'popular',
+    loadChildren: () => import('./popular/popular.module').then( m => m.PopularPageModule)
   }
+
 
 ];
 @NgModule({
