@@ -8,8 +8,21 @@ import { Component, OnInit } from '@angular/core';
 export class PopularPage implements OnInit {
 
   constructor() { }
+  counter: number = 0;
+
+  incrementCounter() {
+    this.counter++;
+  }
+
+  decrementCounter() {
+    if (this.counter > 0) {
+      this.counter--;
+    }
+  }
+  
 
   ngOnInit() {
   }
+  
 
 }

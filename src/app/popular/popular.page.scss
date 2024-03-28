@@ -10,13 +10,70 @@ ion-content {
     width: 100%;
  }
  ion-alert.custom-alert {
-    --backdrop-opacity: 0.7;
+    --backdrop-opacity: 0.5;
   }
-
-  h2{
-    font-weight: bolder;
+  .square {
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid green; 
     margin-left: 10px;
+    position: relative;
   }
-
-
+  
+  .square input[type="radio"] {
+    display: none; 
+  }
+  
+  .square label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    background-color: green;
+  }
+  
+  .square input[type="radio"]:checked + label {
+    background-color: green; 
+  }
  
+.centered-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(149, 239, 149);
+    color: black;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+.centered-counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter-button {
+    background-color:transparent;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin: 0 5px;
+    border-radius: 50%; 
+  }
+  .count{
+    width:80px;
+    border: none;
+    border-radius: 30px;
+  }
+  
+  

@@ -11,6 +11,7 @@ a{
     width: 30px; 
     height: 30px; 
     border-radius: 50%; 
+    background-color: transparent;
    
   }
   .curved-btn {
@@ -35,4 +36,15 @@ display: flex;
 flex-wrap: wrap;
 flex-direction: row;
 column-gap: 10px;
+}
+.count{
+  width:80px;
+  border: none;
+  border-radius: 30px;
+}
+#present-alert{
+  width: 100%;
+}
+ion-alert.custom-alert {
+  --backdrop-opacity: 0.5;
 }

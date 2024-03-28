@@ -1,4 +1,4 @@
-<ion-icon name="arrow-back-outline" style="height: 40px; width: 60px;;"></ion-icon>
+ <ion-icon name="arrow-back-outline" style="height: 40px; width: 60px;;"></ion-icon>
 <ion-content>
 <h1>Cart</h1>
 <ion-item>
@@ -22,6 +22,7 @@
    <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
  
    <div class="counter" slot="end">
+    <ion-button color="light" class="count">
     <button (click)="decrement()" ion-button icon-only color="danger" class="counter-button">
       <ion-icon name="remove"></ion-icon>
     </button>
@@ -29,6 +30,7 @@
     <button (click)="increment()" ion-button icon-only color="primary" class="counter-button">
       <ion-icon name="add"></ion-icon>
     </button>
+  </ion-button>
   </div>
 </ion-item>
 <ion-item>
@@ -42,6 +44,7 @@
    <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
  
    <div class="counter" slot="end">
+    <ion-button color="light" class="count">
     <button (click)="decrement1()" ion-button icon-only color="danger" class="counter-button">
       <ion-icon name="remove"></ion-icon>
     </button>
@@ -49,6 +52,7 @@
     <button (click)="increment1()" ion-button icon-only color="primary" class="counter-button">
       <ion-icon name="add"></ion-icon>
     </button>
+    </ion-button>
   </div>
 </ion-item>
 <ion-item>
@@ -160,5 +164,6 @@
     <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">980
   </ion-item>
   </ion-list>
-</ion-content>
-<ion-button color="dark">MakePayment</ion-button>
+</ion-content> 
+ <ion-button id="open-loading" color="dark">MakePayment</ion-button>
+ <ion-loading trigger="open-loading" message="Please Wait" duration="3000" spinner="circles"></ion-loading>

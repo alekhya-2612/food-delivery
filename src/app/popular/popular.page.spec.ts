@@ -1,4 +1,4 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { PopularPage } from './popular.page';
 
 describe('PopularPage', () => {
@@ -15,3 +15,4 @@ describe('PopularPage', () => {
     expect(component).toBeTruthy();
   });
 });
+
