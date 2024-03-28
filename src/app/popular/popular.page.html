@@ -1,27 +1,3 @@
-<!-- <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-icon name="arrow-back-sharp"></ion-icon>
-    </ion-buttons>
-    
-    
-  </ion-toolbar>
-</ion-header> -->
-
-<!-- <ion-content>
-  <div class="background-image">
-    
-  </div>
-</ion-content> -->
-<!-- <ion-content>
-  <div class="background-image">
-    <ion-icon name="arrow-back-sharp"></ion-icon>
-  <ion-buttons slot="end"> 
-    <ion-icon name="heart-outline"></ion-icon>
-    <ion-icon name="search-outline"></ion-icon>
-  </ion-buttons>
-</div>
-</ion-content> -->
  <ion-content class="background-image">
   <ion-content>
     <div class="background-image">
@@ -48,33 +24,43 @@
         Group order
       </ion-button>
     </ion-item>
-    <ion-item>
-    <h2>Most Popular</h2>
-    <ion-icon name="chevron-up-outline" slot="end"></ion-icon>
-  </ion-item>
-  <ion-item>
-  <h4 style="font-weight: bolder;">Shah Ghouse 
-    <br>chicken <br>
-    dum biryani  </h4><br>
-   <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
- 
-  <ion-card style="height: 80px; width: 100px; position: relative;" slot="end">
-    
-    <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
-    <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
-  </ion-card>
-</ion-item>
-<ion-item>
-  <h4 style="font-weight: bolder;">Shah Ghouse 
-    <br>chicken <br>
-    dum biryani  </h4><br>
-   <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
- 
-  <ion-card style="height: 80px; width: 100px; position: relative;" slot="end">
-    
-    <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
-    <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
-  </ion-card>
-</ion-item>
-<ion-button color="dark" class="btn">View Cart(2 Items)</ion-button>
-</ion-card>
+    <ion-accordion-group :multiple="true" :value="['first', 'third']">
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-label> <h2>Most Popular</h2></ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">
+          <ion-item>
+            <h4 style="font-weight: bolder;">Shah Ghouse 
+              <br>chicken <br>
+              dum biryani  </h4><br>
+             <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
+           
+            <ion-card style="height: 80px; width: 100px; position: relative;" slot="end">
+              
+              <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
+              <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
+            </ion-card>
+          </ion-item>
+          <ion-item>
+            <h4 style="font-weight: bolder;">Shah Ghouse 
+              <br>chicken <br>
+              dum biryani  </h4><br>
+             <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
+           
+            <ion-card style="height: 80px; width: 100px; position: relative;" slot="end">
+              
+              <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
+              <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
+            </ion-card>
+          </ion-item>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+<ion-button id="present-alert" color="dark">View Cart(2 Items)</ion-button>
+  <ion-alert trigger="present-alert" class="custom-alert" header="Are you sure?" :buttons="alertButtons"></ion-alert>
+
+</ion-card> 
+
+  
+
