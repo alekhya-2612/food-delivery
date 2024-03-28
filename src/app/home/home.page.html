@@ -1,11 +1,11 @@
-<ion-content>
+ <ion-content>
     <div class="background-image">
       <ion-icon name="arrow-back-circle-outline" style="height:50px;width:55px;color:white;"></ion-icon>
       <ion-icon name="heart-circle-outline" style="height:50px;width:55px;margin-left:230px;color:white;"></ion-icon>
       <ion-icon name="search-circle-outline" style="height:50px;width:55px;color:white;"slot="end"></ion-icon>
       </div>
     </ion-content>
-  <ion-card>
+<ion-card>
   <ion-item>
   <h1 >Menu</h1>
     <ion-icon name="close-outline" slot="end"></ion-icon>
@@ -46,7 +46,19 @@
   <h4>Desserts</h4> 
   <p slot="end">8</p>
 </ion-item>
-</ion-card>
-<!-- <ion-button id="open-action-sheet">Menu</ion-button>
-<ion-action-sheet trigger="open-action-sheet" header="Actions" buttons="actionSheetButtons">
-  </ion-action-sheet> -->
+</ion-card> 
+
+
+  <!-- <div class="container">
+    <ion-item>
+    <ion-button id="open-action-sheet">Menu</ion-button>
+    <ion-icon name="close-outline" slot="end"></ion-icon>
+  </ion-item>
+    <ion-action-sheet
+      trigger="open-action-sheet" 
+      header="Example header"
+      subHeader="Example subheader"
+      [buttons]="actionSheetButtons"
+      (didDismiss)="logResult($event)">
+    </ion-action-sheet>
+ </div> -->
