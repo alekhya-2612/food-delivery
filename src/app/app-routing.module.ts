@@ -9,7 +9,8 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'search',
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
@@ -20,7 +21,23 @@ const routes: Routes = [
   {
     path: 'grocery',
     loadChildren: () => import('./grocery/grocery.module').then( m => m.GroceryPageModule)
+  },
+  {
+    path: 'addtip',
+    loadChildren: () => import('./addtip/addtip.module').then( m => m.AddtipPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'categories',
+    loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
+  },  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
   }
+
 
 ];
 @NgModule({

@@ -1,0 +1,50 @@
+h1{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+ ion-button{
+    width: 60px;
+    border-radius: 2px solid white;
+    
+ }
+ .curved-button {
+    --border-radius: 20px; 
+    --background-color: transparent;
+
+    
+  }
+  h2{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.image{
+width: 100%;
+height: 200px;
+
+}
+.image-container {
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height:250px;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);  
+    background-color:  whitesmoke;
+    border-radius: 20px;
+    font-size: 2.5rem;
+  }
+  
+  h3{
+    font-weight: bolder;
+    margin-left: 10px;
+    color: black;
+}
+
