@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'grocery',
-    loadChildren: () => import('./grocery/grocery.module').then( m => m.GroceryPageModule)
-  },
-  {
     path: 'addtip',
     loadChildren: () => import('./addtip/addtip.module').then( m => m.AddtipPageModule)
   },
@@ -33,9 +29,14 @@ const routes: Routes = [
   {
     path: 'categories',
     loadChildren: () => import('./categories/categories.module').then( m => m.CategoriesPageModule)
-  },  {
-    path: 'main',
-    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'popular',
+    loadChildren: () => import('./popular/popular.module').then( m => m.PopularPageModule)
   }
 
 

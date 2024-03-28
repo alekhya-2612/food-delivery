@@ -1,0 +1,38 @@
+h1{
+    font-weight: bolder;
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(30, 222, 30);
+
+}
+.counter-button {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+   
+  }
+  .curved-btn {
+    --color: black;
+    border-radius: 20px;
+     
+  }
+  .grid{
+    background-color: whitesmoke;
+    
+}
+.grid:hover{
+    color: black;
+    border-color: black;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+.abc{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+column-gap: 10px;
+}

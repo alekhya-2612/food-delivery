@@ -1,0 +1,164 @@
+<ion-icon name="arrow-back-outline" style="height: 40px; width: 60px;;"></ion-icon>
+<ion-content>
+<h1>Cart</h1>
+<ion-item>
+<ion-icon name="location-outline" style="height:30px; width:30px; margin-left: 10px;"></ion-icon>
+<h2 style="margin-bottom: 20px;">Delivery Address</h2><br>
+<p style="margin-bottom: -30px; margin-left:-200px;">12 th phase kphb Addagutta Hyd Telangana</p> 
+<ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+</ion-item>
+<ion-item>
+  <h2 style="font-weight: bolder;"> Items in your cart</h2>
+  <a href="" slot="end">+Add more</a>
+</ion-item>
+<ion-item>
+  <ion-card style="height: 80px; width: 100px; position: relative;">
+    <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
+    <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
+  </ion-card>
+  <h4 style="font-weight: bolder;">Shah Ghouse 
+    <br>chicken <br>
+    dum biryani  </h4><br>
+   <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
+ 
+   <div class="counter" slot="end">
+    <button (click)="decrement()" ion-button icon-only color="danger" class="counter-button">
+      <ion-icon name="remove"></ion-icon>
+    </button>
+    <span>{{ count }}</span>
+    <button (click)="increment()" ion-button icon-only color="primary" class="counter-button">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+</ion-item>
+<ion-item>
+  <ion-card style="height: 80px; width: 100px; position: relative;">
+    <ion-img src="https://media.assettype.com/freepressjournal/import/2015/07/paradise-hotel.com_.png"></ion-img>
+    <ion-badge color="danger" style="position: absolute; bottom: 5px; left: 5px;">•</ion-badge>
+  </ion-card>
+  <h4 style="font-weight: bolder;">Shah Ghouse 
+    <br>chicken <br>
+    dum biryani  </h4><br>
+   <p style="margin-top: 130px; margin-left: -120px;"> <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">400 </p>
+ 
+   <div class="counter" slot="end">
+    <button (click)="decrement1()" ion-button icon-only color="danger" class="counter-button">
+      <ion-icon name="remove"></ion-icon>
+    </button>
+    <span>{{ count1 }}</span>
+    <button (click)="increment1()" ion-button icon-only color="primary" class="counter-button">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </div>
+</ion-item>
+<ion-item>
+  <ion-label position="stacked" class="lab">Add Cooking instuctions</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-grid>
+  <ion-row> 
+    <ion-col>
+      <ion-item class="grid">
+     <ion-icon name="time-outline"></ion-icon>
+     <p style="margin-left: 10px;">
+      Standard <br>
+     25-30 mins
+     </p>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item class="grid">
+        <ion-icon name="calendar-outline"></ion-icon>
+     <p style="margin-left: 10px;">
+      Scheduled <br>
+     Select time
+     </p>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<ion-list>
+  <ion-item>
+    <img src ="https://static.thenounproject.com/png/4818484-200.png" style="height:40px;width:50px; margin-left: 10px;">
+    <ion-label style="margin-left: 20px ;"><h2 style="font-weight: bolder;">Delivery Instructions</h2> <br>
+      Leave at door
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="gift-outline" style="height:40px;width:50px; margin-left: 10px;"></ion-icon>
+    <ion-label style="margin-left: 20px ;"><h2 style="font-weight: bolder;">Gift someone else</h2> <br>
+     Add persons info & message
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <img src ="https://cdn-icons-png.flaticon.com/512/126/126422.png" style="height:40px;width:50px; margin-left: 10px;">
+    <ion-label style="margin-left: 20px ;"><h2 style="font-weight: bolder;">PromoCode applied</h2> <br>
+     <p style="color:rgb(30, 222, 30)">PAYTM00453</p> 
+    </ion-label>
+    <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+  </ion-item>
+  
+</ion-list>
+<h1><b>AdsTip</b></h1>
+<ion-grid>
+  <ion-row> 
+    <ion-col>
+      <ion-item class="grid">
+        <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">20
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item class="grid">
+        <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">30
+
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item class="grid">
+        <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">40
+
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <ion-item class="grid">
+        Custom
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<h2 style="font-weight: bolder; margin-left: 10px;"> Bill Details</h2>
+<ion-list>
+  <ion-item>
+    <ion-label>Sub total</ion-label>
+    <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">980
+  </ion-item>
+  <ion-item>
+    <ion-label>PromoCode</ion-label>
+    <ion-item style="color:rgb(30, 222, 30) ; margin-right: -10px;">
+      -<img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">80
+    </ion-item>
+  </ion-item>
+  <ion-item>
+    <ion-label>Deliveryfee
+    <ion-icon name="alert-circle-outline" style="height:20px;width:20px; margin-top: -25px;"></ion-icon>
+  </ion-label>
+  <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">80
+  </ion-item>
+  <ion-item>
+    <ion-label>Tax&otherfee
+      <ion-icon name="alert-circle-outline" style="height:20px;width:20px; margin-top: -25px;"></ion-icon>
+    </ion-label>
+    <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">80
+  
+  </ion-item>
+  <ion-item>
+    
+    <ion-label style="font-weight: bolder;">Total</ion-label>
+    <img src ="/assets/icon/rupee symbol.png" style="height:20px;width:20px; margin-left: 10px;">980
+  </ion-item>
+  </ion-list>
+</ion-content>
+<ion-button color="dark">MakePayment</ion-button>
