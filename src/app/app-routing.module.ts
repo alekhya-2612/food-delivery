@@ -45,7 +45,11 @@ const routes: Routes = [
   {
     path: 'grocery',
     loadChildren: () => import('./grocery/grocery.module').then( m => m.GroceryPageModule)
+  },  {
+    path: 'filter',
+    loadChildren: () => import('./filter/filter.module').then( m => m.FilterPageModule)
   },
+
 
 
 ];
